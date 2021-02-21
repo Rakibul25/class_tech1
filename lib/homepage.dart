@@ -25,7 +25,12 @@ class _HomePageState extends State<HomePage> {
           color: Colors.lightGreen,
           child: Padding(
             padding: const EdgeInsets.all(16.0),
-            child: Row(children: [recir(), recir(), recir()]),
+            child: Column(
+              children: [
+                recir(),
+                recir(),
+              ],
+            ),
           ),
         ),
       ),
@@ -37,8 +42,8 @@ Widget recir() {
   return Padding(
     padding: const EdgeInsets.all(8.0),
     child: Container(
-      width: 40.0,
-      height: 40.0,
+      width: 30.0,
+      height: 35.0,
       decoration: new BoxDecoration(
         color: Colors.orange,
         shape: BoxShape.circle,
