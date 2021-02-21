@@ -69,6 +69,8 @@ class RowDemo extends StatelessWidget {
               padding:
                   const EdgeInsets.symmetric(horizontal: 24.0, vertical: 36),
               child: Row(
+                //mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
                 children: [
                   FlutterLogo(size: 50),
                   SizedBox(
