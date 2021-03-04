@@ -1,7 +1,5 @@
-import 'package:class_tech/HomePage.dart';
+import 'package:class_tech/shoppingpage.dart';
 import 'package:flutter/material.dart';
-
-import 'HomePage.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: ShoppingPage(),
     );
   }
 }
