@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:social_media_buttons/social_media_button.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -10,22 +11,9 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-          child: ListView(
-        children: [
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-          card1(),
-        ],
-      )),
+        //child: Center(child: SocialMediaButton.google(url: 'www.facebook.com')),
+        child: card1(),
+      ),
     );
   }
 }
