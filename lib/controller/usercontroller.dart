@@ -18,9 +18,14 @@ class UserController extends GetxController {
   }
 
   void getData() {
-    userModel.value.name = usernameController.value.text;
-    userModel.value.mobile = mobileController.value.text;
-    userModel.value.address = addressController.value.text;
+    userModel.update((UserModel) {
+      userModel.value.name = usernameController.value.text;
+      userModel.value.mobile = mobileController.value.text;
+      userModel.value.address = addressController.value.text;
+    });
+    // userModel.value.name = usernameController.value.text;
+    // userModel.value.mobile = mobileController.value.text;
+    // userModel.value.address = addressController.value.text;
     // Get.to(ShowPage());
     print(userModel.value.name);
   }
